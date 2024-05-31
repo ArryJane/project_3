@@ -1,0 +1,62 @@
+
+.tabs {
+    max-width: 100%;
+    margin-top: 5vw;
+    margin-bottom: 10vh;
+    
+}
+
+.tabs__nav {
+    display: flex;
+    
+}
+
+.tabs__nav-btn {
+    padding: 1vw 2vw;
+    @include small-text;
+    background-color: #f5f5f5;
+    border: 0;
+    border-right: 1px solid #ddd;
+    cursor: pointer;
+    border-radius: 1vw 1vw 0vw 0vw;
+}
+
+.tabs__nav-btn:last-child {
+    border-right: none;
+}
+
+.tabs__nav-btn:hover {
+    background-color: #bcc6c0;
+}
+
+.tabs__nav-btn.active {
+    background-color: #E1EDE6;
+    border-right-color: #E1EDE6;
+}
+
+.tabs__content {
+    padding: 30px;
+    background-color: #E1EDE6;
+    border-radius: 0vw 1vw 1vw 1vw;
+    @include small-text;
+}
+
+.tabs__item {
+    display: none;
+}
+
+.tabs__item.active {
+    display: block;
+}
+.block3{
+    &__title{
+        padding-top: 10vw;
+        padding-left: 5vw;
+        margin-bottom: 7vh;
+        @include large-text(70,35);
+        display: inline-block;
+        @include mediaPhone{
+            @include large-text(40,32);
+        }
+    }
+}
